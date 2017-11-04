@@ -13,7 +13,7 @@
         <span ng-if="game.user" ng-bind="game.user.displayName"></span>
         <span ng-if="!game.user">Deleted User</span>
       </small>
-      <h4 class="list-group-item-heading" ng-bind="game.title" style="color: #db4437"></h4>
+      <h4 class="list-group-item-heading" ng-bind="game.name" style="color: #db4437"></h4>
       <p class="list-group-item-text" ng-bind="game.Content"></p>
     </a>
   </div>
@@ -21,3 +21,7 @@
     No Games yet, why don't you <a ui-sref="games.create">create one</a>?
   </div>
 </section>
+
+
+
+
