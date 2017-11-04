@@ -17,7 +17,7 @@
 
         <div class="form-group" show-errors>
           <label class="control-label" for="Content">Content</label>
-          <input name="Content" type="text" ng-model="vm.game.Content" id="Content" class="form-control" placeholder="post.." required>
+          <textarea name="Content" type="text" ng-model="vm.game.Content" id="Content" class="form-control" placeholder="post.." required rows="5"></textarea> 
           <div ng-messages="vm.form.gameForm.Content.$error" role="alert">
             <p class="help-block error-text" ng-message="required">Content is required.</p>
           </div>

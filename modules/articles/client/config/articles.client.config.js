@@ -8,7 +8,7 @@ angular.module('articles').run(['Menus',
       title: 'Plays',
       state: 'articles',
       type: 'dropdown',
-      roles: ['*']
+      roles: ['user']
     });
 
     // Add the dropdown list item
