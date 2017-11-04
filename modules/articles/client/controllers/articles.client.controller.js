@@ -5,6 +5,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
   function ($scope, $stateParams, $location, Authentication, Articles) {
     $scope.authentication = Authentication;
 
+
     // Create new Article
     $scope.create = function (isValid) {
       $scope.error = null;
@@ -15,10 +16,12 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
         return false;
       }
 
+      console.log($scope.authentication.user.bio);
       // Create new Article object
       var article = new Articles({
         title: this.title,
-        content: this.content
+        content: this.content,
+        bio: $scope.authentication.user.bio
       });
 
       // Redirect after save

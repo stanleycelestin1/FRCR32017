@@ -29,6 +29,9 @@ var ArticleSchema = new Schema({
     type: Schema.ObjectId,
     ref: 'User'
   },
+  bio: {
+    type: String,
+  }
 });
 
 mongoose.model('Article', ArticleSchema);

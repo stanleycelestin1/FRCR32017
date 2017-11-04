@@ -1,9 +1,10 @@
 <!-- The chat view -->
 <section class="container" ng-controller="ChatController">
+
   <div class="page-header text-center">
     <h1>Frequently Asked Questions Chat</h1>
   </div>
-  <!-- The message form -->
+  <!--
   <form class="col-xs-12 col-md-offset-4 col-md-4" ng-submit="sendMessage();">
     <fieldset class="row">
       <div class="input-group">
@@ -15,7 +16,6 @@
     </fieldset>
   </form>
   <ul class="list-unstyled">
-    <!-- List all messages -->
     <li class="col-xs-12 col-md-offset-4 col-md-4 chat-message" ng-repeat="message in messages">
       <small class="pull-right text-muted" ng-bind="message.created | date:'mediumTime'"></small>
       <img ng-src="{{message.profileImageURL}}" alt="{{message.username}}" class="pull-left chat-profile-image" />
@@ -26,6 +26,7 @@
       </div>
     </li>
   </ul>
+-->
   <div class="col-xs-12 col-md-offset-4 col-md-4">
     <iframe
     width="350"
