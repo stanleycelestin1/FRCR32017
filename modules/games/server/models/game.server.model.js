@@ -16,6 +16,15 @@ var GameSchema = new Schema({
     required: 'Please fill Game name',
     trim: true
   },
+  Content: {
+    type: String,
+    default: '',
+    required: 'Please add Content',
+    trim: true
+  },
+  bio: {
+    type: String,
+  },
   created: {
     type: Date,
     default: Date.now

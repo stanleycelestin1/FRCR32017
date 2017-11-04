@@ -8,12 +8,13 @@
        class="list-group-item">
       <small class="list-group-item-text">
         Posted on
-        <span ng-bind="game.created | date:'mediumDate'"></span>
+        <span ng-bind="game.created | date:'mediumDate'" style=" float: right;"></span>
         by
         <span ng-if="game.user" ng-bind="game.user.displayName"></span>
         <span ng-if="!game.user">Deleted User</span>
       </small>
-      <h4 class="list-group-item-heading" ng-bind="game.name"></h4>
+      <h4 class="list-group-item-heading" ng-bind="game.title" style="color: #db4437"></h4>
+      <p class="list-group-item-text" ng-bind="game.Content"></p>
     </a>
   </div>
   <div class="alert alert-warning text-center" ng-if="vm.games.$resolved && !vm.games.length">
